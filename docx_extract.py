@@ -4,10 +4,6 @@ import pandas as pd
 from pandas import DataFrame
 import io,sys
 
-#modify path by your setting
-sys.path.append("C:/Users/ygkwo/Desktop/docxtool/Document_Automation_Program")
-
-
 from folder_finding import find_docx_in_folder
 
 #path= "C:/Users/ygkwo/Desktop/test1/1.docx" #input_path
@@ -91,7 +87,7 @@ def docx_to_xlsx_multi(input):
 
 
 
-
+##완성시 삭제!!! 
 
 #one docx file
 #docx_to_xlsx(path,output_path)

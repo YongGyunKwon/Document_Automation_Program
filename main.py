@@ -1,13 +1,17 @@
 import io,sys
 
-sys.path.append("C:/Users/ygkwo/Desktop/docxtool/Document_Automation_Program")
+#modify path by your PC setting.
+sys.path.append("THIS")
 
 from folder_finding import find_docx_in_folder
 from docx_extract import docx_to_xlsx_multi
 
 def main():
-    print("Main")
+    print("Document Automation Program")
     
+    print("Before launching... ")
+    print("If you open docx file, this program does not work.")
+
     print("Input Folder's PATH")
     input_path=input()
 

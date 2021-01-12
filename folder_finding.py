@@ -1,7 +1,6 @@
 import os
  
 
-
 #path: folder's path
 def find_docx_in_folder(path):
     os.chdir(path)
@@ -16,7 +15,6 @@ def find_docx_in_folder(path):
             docx_files.append(docx_file_path)    
             
     return docx_files
-
 
 
 
@@ -37,3 +35,5 @@ def find_docx_in_folder(path):
 
 
 #test1=find_docx_in_folder(input_path)
+
+##
