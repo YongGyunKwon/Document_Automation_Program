@@ -1,12 +1,19 @@
 import io,sys
-
+import os
 #modify path by your PC setting.
-sys.path.append("THIS")
+
+repositorypath=os.getcwd()
+print(repositorypath)
+
+
+sys.path.append(repositorypath)
 
 from folder_finding import find_docx_in_folder
 from docx_extract import docx_to_xlsx_multi
 
 def main():
+
+
     print("Document Automation Program")
     
     print("Before launching... ")
