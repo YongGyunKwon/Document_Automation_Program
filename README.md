@@ -45,7 +45,7 @@ We create this program to preven "Human Error" that can occur while manually wri
 
     (Select word file)
 
-2. 워드 문서 내의 첫번째 테이블을 찾아서 추출한다. 
+2. 워드 문서 내의 테이블들을 찾아서 추출한다. 
 
     (Extract table in selected word file)
 
@@ -59,22 +59,17 @@ We create this program to preven "Human Error" that can occur while manually wri
 
 *[사용전에!] 추출하려는 docx파일이 열려있으면, 프로그램이 제대로 작동하지 않는다.
 
-1. 실행하기 전에 `main.py`에서 개인 PC의 사양에 맞게 프로젝트 디렉토리(레포지토리) 경로를 수정한다.
-
-    ```python
-    #main.py
-    import io,sys
-
-    #modify path by your PC setting.
-    sys.path.append("This!!!")
-    ```
-
-2. `main.py`를 실행한다.
-3. `Input Folder's PATH` 가 나온다면 docx파일이 있는 경로를 복사한다.
-4. 폴더안의 .docx 파일들 안의 테이블(표)을 인식하여 같은 이름의 .xlsx 파일을 생성된다.
+1. `main.py`를 실행한다.
+2. `Input Folder's PATH` 가 나온다면 docx파일이 있는 경로를 복사한다.
+3. 폴더안의 .docx 파일들 안의 테이블(표)을 인식하여 같은 이름의 .xlsx 파일을 생성된다.
 
     ```tsx
     ex)
     1.docx 안에 테이블(표)이 1.xlsx라는 파일로 만들어 진다.
     (.docx의 테이블들은 각각의 sheet으로 분리되며  만들어지며 table_0 , table_1 순서대로 만들어진다.)
     ```
+
+### Update
+
+- Repository 경로 자동 지정
+- 필수 라이브러리 자동설치
