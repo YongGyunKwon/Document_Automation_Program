@@ -1,19 +1,8 @@
-import os 
-
-#for test
-path1="C:/Users/ygkwo/Desktop/test2"
+import os
+ 
 
 
-#original
-# os.chdir(path)
-
-# for files in os.listdir("."):
-#     if files.endswith(".docx"):
-#         print(files)
-
-#file list in multi folder
-
-
+#path: folder's path
 def find_docx_in_folder(path):
     os.chdir(path)
 
@@ -28,20 +17,23 @@ def find_docx_in_folder(path):
             
     return docx_files
 
-print("Input path(folder)")
+
+
+
+#print("Input path(folder)")
+
+
+##완성하면 삭제하기!!! 
 
 #input
-input_path=input()
+#input_path=input()
 
 #input_path.replace('\'','/')
 
-print("Input_PATH is ",input_path)
+#print("Input_PATH is ",input_path)
 
 
-#If you want to reflect what you want to input_path, modify parameter
-
-#find_docx_in_folder(input_path)
+#print(find_docx_in_folder(input_path))
 
 
-
-print(find_docx_in_folder(input_path))
+#test1=find_docx_in_folder(input_path)
