@@ -1,7 +1,7 @@
 import io,sys
 
 #modify path by your PC setting.
-sys.path.append("THIS")
+sys.path.append("C:/Users/ygkwo/Desktop/docxtool/Document_Automation_Program")
 
 from folder_finding import find_docx_in_folder
 from docx_extract import docx_to_xlsx_multi
