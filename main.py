@@ -13,6 +13,14 @@ from docx_extract import docx_to_xlsx_multi
 
 def main():
 
+    #install essential package
+    os.system('pip install python-docx')
+    os.system('pip install xlsxwriter')
+    os.system('pip install pandas')
+    os.system('pip install workbook')
+    
+    #clear console
+    os.system('cls')
 
     print("Document Automation Program")
     
@@ -29,7 +37,7 @@ def main():
     print(in_1)
 
     docx_to_xlsx_multi(in_1)
-
+    
 
 if __name__=="__main__":
     main()
