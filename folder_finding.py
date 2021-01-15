@@ -17,7 +17,7 @@ def find_docx_in_folder(path):
     return docx_files
 
 
-
+# For test
 #print("Input path(folder)")
 
 
