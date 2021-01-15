@@ -30,6 +30,10 @@ def main():
     #Input your folder PATH, then you can extract docx tables in your folder.
     print("Input Folder's PATH")
     input_path=input()
+    
+    #For test
+    input_path="C:\\Users\\ygkwo\\Desktop\\test1"
+    
 
     print("Input_PATH is ",input_path)
 
@@ -47,4 +51,3 @@ if __name__=="__main__":
 
 # 원하는 챕터에서의 테이블만 추출 
 # #excel 다른 칸으로 붙이는 법! 
-#확장자 더 찾아보기 (docx 외에)

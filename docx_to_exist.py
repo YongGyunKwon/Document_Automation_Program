@@ -97,25 +97,3 @@ def docx_to_xlsx_multi(input):
 
 
 #excel 다른 칸으로 붙이는 법! 
-
-
-##완성시 삭제!!! 
-
-#one docx file
-#docx_to_xlsx(path,output_path)
-
-# print("Input Folder's PATH")
-# input_path=input()
-
-# print("Input_PATH is ",input_path)
-
-# #If you want to reflect what you want to input_path, modify parameter
-
-# #find_docx_in_folder(input_path)
-
-# in_1=find_docx_in_folder(input_path)
-# print("We'll extract this files(.docx)")
-# print(in_1)
-
-
-# docx_to_xlsx_multi(in_1)
