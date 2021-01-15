@@ -1,7 +1,8 @@
 import io,sys
 import os
-#modify path by your PC setting.
 
+
+#Get your PC's PATH
 repositorypath=os.getcwd()
 print(repositorypath)
 
@@ -26,7 +27,7 @@ def main():
     
     print("Before launching... ")
     print("If you open docx file, this program does not work.")
-
+    #Input your folder PATH, then you can extract docx tables in your folder.
     print("Input Folder's PATH")
     input_path=input()
 

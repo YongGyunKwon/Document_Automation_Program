@@ -6,11 +6,12 @@ import io,sys
 
 from folder_finding import find_docx_in_folder
 
+# For test 
 #path= "C:/Users/ygkwo/Desktop/test1/1.docx" #input_path
 #output_path="C:/Users/ygkwo/Desktop/test1" #output_path
 
 
-
+# Refrence (완성 시 삭제)
 # one file
 #docx_to_xlsx Function [Input, Output]
 # def docx_to_xlsx(input,output):
