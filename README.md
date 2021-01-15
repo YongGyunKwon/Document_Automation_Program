@@ -73,3 +73,10 @@ We create this program to preven "Human Error" that can occur while manually wri
 
 - Repository 경로 자동 지정
 - 필수 라이브러리 자동설치
+
+
+### Update 예정
+
+- 여러 형태의 word 파일 확장자 지원(.docx/.docm/.doc/.dot/.dotm/.dotx)
+- 기존에 있던 Excel 파일에서 원하는 다른 칸으로 붙이는 법
+- 원하는 챕터의 테이블만 추출
