@@ -54,7 +54,11 @@ def docx_to_xlsx_multi(input):
 
         document=Document(k)
 
-        out=k[:-5]
+        if k.endswith(".docx") or k.endswith(".docm") or k.endswith(".dotm") or k.endswith(".dotx"): 
+            out=k[:-5]
+
+        elif k.endswith(".doc") or k.endswith(".dot"):
+            out=k[:-4]
 
         #checkpoint
         print("check point: slicing path is"+out)
