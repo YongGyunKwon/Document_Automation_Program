@@ -87,6 +87,8 @@ def docx_to_xlsx_multi(input):
         writer.save()
 
 
+#excel 다른 칸으로 붙이는 법! 
+
 
 ##완성시 삭제!!! 
 

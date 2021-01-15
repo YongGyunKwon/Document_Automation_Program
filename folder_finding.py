@@ -8,6 +8,7 @@ def find_docx_in_folder(path):
     docx_files=[]
 
     for files in os.listdir("."):
+        #확장자 더 찾아보기 (docx 외에)
         if files.endswith(".docx"):
             print(files)
             docx_file_path=path+'\\'+files
