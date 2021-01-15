@@ -43,7 +43,7 @@ def main():
 if __name__=="__main__":
     main()
 
-#Update!!! 
+#Update 할것!! 
 
 # 원하는 챕터에서의 테이블만 추출 
 # #excel 다른 칸으로 붙이는 법! 

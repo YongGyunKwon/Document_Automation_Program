@@ -68,6 +68,7 @@ def docx_to_xlsx_multi(input):
             keys=None
             row_data=None
             
+            # 행과 열 수 비교하는 함수를.... 
             for j,row in enumerate(table.rows):
                 text=(cell.text for cell in row.cells)
                 if j==0:
