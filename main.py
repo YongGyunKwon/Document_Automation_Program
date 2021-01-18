@@ -11,6 +11,7 @@ sys.path.append(repositorypath)
 
 from folder_finding import find_docx_in_folder
 from docx_extract import docx_to_xlsx_multi
+from docx_to_exist import docx_to_xlsx_exist
 
 def main():
 
@@ -32,7 +33,7 @@ def main():
     input_path=input()
     
     #For test
-    input_path="C:\\Users\\ygkwo\\Desktop\\test1"
+    #input_path="C:\\Users\\ygkwo\\Desktop\\test1"
     
 
     print("Input_PATH is ",input_path)
@@ -42,7 +43,7 @@ def main():
     print(in_1)
 
     docx_to_xlsx_multi(in_1)
-    
+    docx_to_xlsx_exist(in_1)
 
 if __name__=="__main__":
     main()
@@ -50,4 +51,4 @@ if __name__=="__main__":
 #Update 할것!! 
 
 # 원하는 챕터에서의 테이블만 추출 
-# #excel 다른 칸으로 붙이는 법! 
+# #excel 다른 칸으로 붙이는 법!  
