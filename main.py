@@ -16,10 +16,11 @@ from docx_to_exist import docx_to_xlsx_exist
 def main():
 
     #install essential package
-    os.system('pip install python-docx')
-    os.system('pip install xlsxwriter')
-    os.system('pip install pandas')
-    os.system('pip install workbook')
+    # os.system('pip install python-docx')
+    # os.system('pip install xlsxwriter')
+    # os.system('pip install pandas')
+    # os.system('pip install workbook')
+    # os.system('pip install openpyxl')
     
     #clear console
     os.system('cls')
@@ -42,7 +43,7 @@ def main():
     print("We'll extract this files(.docx)")
     print(in_1)
 
-    docx_to_xlsx_multi(in_1)
+    #docx_to_xlsx_multi(in_1)
     docx_to_xlsx_exist(in_1)
 
 if __name__=="__main__":

@@ -1,15 +1,23 @@
 from docx.api import Document
-from xlsxwriter import Workbook
+from openpyxl import Workbook
+from openpyxl import load_workbook
+#from openpyxl import append_df_to_excel
 import pandas as pd 
 from pandas import DataFrame
 import io,sys
+import os
+#import openpyxl
 
 from folder_finding import find_docx_in_folder
 
 
+
+
+
+
 #multi
 def docx_to_xlsx_exist(input):
-
+    #Input이 파일 이름배열이고 그 중에서 하나씩 뽑아낸 것이 k
     for k in input:
         print("file is "+ k)
         print("\n")
@@ -19,7 +27,7 @@ def docx_to_xlsx_exist(input):
         # for another word file format
         if k.endswith(".docx") or k.endswith(".docm") or k.endswith(".dotm") or k.endswith(".dotx"): 
             out=k[:-5]
-
+        
         elif k.endswith(".doc") or k.endswith(".dot"):
             out=k[:-4]
 
@@ -29,8 +37,15 @@ def docx_to_xlsx_exist(input):
         print("check point: slicing path is"+out)
 
         
+        # if os.path.exists(out_xlsx):
+        #     new_wb=load_workbook(out_xlsx)
+        # else:
+        #     new_wb=Workbook()
+
+
         #새로 붙이기
-        writer=pd.ExcelWriter('{}.xlsx'.format(out),engine='xlsxwriter')
+        writer=pd.ExcelWriter('{}.xlsx'.format(out),engine="openpyxl")
+        #engine='xlsxwriter'
 
         for i in range(len(document.tables)):
             table=document.tables[i]
@@ -46,15 +61,11 @@ def docx_to_xlsx_exist(input):
                     continue
                 row_data=dict(zip(keys,text))
                 data.append(row_data)
-                #
-                # df1=pd.DataFrame(data)
-                # print(df1)
-                # df1.to_excel(writer,sheet_name='table_{}'.format(i))
-
+                
             df=pd.DataFrame(data)
             print(df)
-            df.to_excel(writer,startrow= 5 ,startcol=5 ,sheet_name='table_{}'.format(i))
-
+            #df.to_excel(writer,startrow= 5, startcol=5, sheet_name='table_{}'.format(i))
+            append_df_to_excel(writer,df,sheet_name='table_{}'.format(i),startrow=5,startcol=5)
         writer.save()
 
 
