@@ -5,7 +5,7 @@ from pandas import DataFrame
 import io,sys
 
 from folder_finding import find_docx_in_folder
-
+from docx.enum.table import WD_TABLE_DIRECTION
 # For test 
 #path= "C:/Users/ygkwo/Desktop/test1/1.docx" #input_path
 #output_path="C:/Users/ygkwo/Desktop/test1" #output_path
@@ -75,7 +75,9 @@ def docx_to_xlsx_multi(input):
             data=[]
             keys=None
             row_data=None
-            
+            #print("This is talbe_direction")
+            #print(table.direction)
+
             # 행과 열 수 비교하는 함수를.... 
             for j,row in enumerate(table.rows):
                 text=(cell.text for cell in row.cells)
