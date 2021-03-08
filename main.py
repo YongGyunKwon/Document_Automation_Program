@@ -43,8 +43,8 @@ def main():
     print("We'll extract this files(.docx)")
     print(in_1)
 
-    #docx_to_xlsx_multi(in_1)
-    docx_to_xlsx_exist(in_1)
+    docx_to_xlsx_multi(in_1)
+    #docx_to_xlsx_exist(in_1)
 
 if __name__=="__main__":
     main()
